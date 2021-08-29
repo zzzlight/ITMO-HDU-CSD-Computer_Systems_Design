@@ -1,0 +1,35 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dbe4f722851248e3976cc912f1a3ff99 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v:55]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v:61]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v:120]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm.v" Line 10. Module udm(BUS_TIMEOUT=100,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(mem_init="NO",mem_data="nodata.hex",adr_width=10) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module xil_defaultlib.sys_clk_sys_clk_clk_wiz
+Compiling module xil_defaultlib.sys_clk
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=100)
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=100,RTX_EXTERNAL...
+Compiling module xil_defaultlib.ram_dual(mem_init="NO",mem_data=...
+Compiling module xil_defaultlib.sqrtnum
+Compiling module xil_defaultlib.NEXYS4_DDR(SIM="YES")
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

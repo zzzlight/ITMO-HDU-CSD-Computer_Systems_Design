@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun 18 21:11:12 2021
+# Process ID: 14264
+# Current directory: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_2stage/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_2stage/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/riscv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_2stage/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_2stage/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_2stage/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/riscv_tb_behav/webtalk/xsim_webtalk.tcl -notrace

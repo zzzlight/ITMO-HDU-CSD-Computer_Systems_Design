@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/tb/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+WARNING: [VRFC 10-3824] variable 'ARRSIZE' must explicitly be declared as automatic or static [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/tb/tb.sv:85]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NEXYS4_DDR

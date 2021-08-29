@@ -1,0 +1,6 @@
+0.7
+v2020.3.0
+Apr  7 2021
+05:52:48
+C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/impl/func/xsim/glbl.v,1617756343,verilog,,,,glbl,,,,,,,,
+C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/impl/func/xsim/tb_func_impl.v,1622816490,verilog,,,,NEXYS4_DDR;ram_dual;reset_sync;sys_clk;sys_clk_clk_wiz;uart_rx;uart_tx;udm;udm_controller,,,,,,,,

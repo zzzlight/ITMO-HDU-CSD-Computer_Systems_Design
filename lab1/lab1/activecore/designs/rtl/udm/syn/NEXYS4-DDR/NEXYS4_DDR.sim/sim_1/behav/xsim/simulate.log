@@ -1,0 +1,5 @@
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+### SIMULATION STARTED ###
+WARNING: File: C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/tb/udm.svh Line: 20 : Attempting to dereference a null or uninitialized class object in write context : This is not allowed and the write is ignored.
+WARNING: File: C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/tb/udm.svh Line: 20 : Attempting to dereference a null or uninitialized class object in write context : This is not allowed and the write is ignored.

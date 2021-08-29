@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 16 21:55:56 2020
+# Process ID: 17208
+# Current directory: E:/wanglei/xilinxWorkPlace/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/wanglei/xilinxWorkPlace/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/wanglei/xilinxWorkPlace/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/wanglei/xilinxWorkPlace/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/wanglei/xilinxWorkPlace/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 111.680 ; gain = 23.578
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 16 21:56:01 2020...

@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v" \
+
+sv xil_defaultlib  \
+"../../../../../../tb/tb.sv" \
+"../../../../NEXYS4_DDR.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../../hdl/udm.v" \
+"../../../../../../hdl/uart_rx.v" \
+"../../../../../../hdl/udm_controller.v" \
+"../../../../../../hdl/uart_tx.v" \
+"../../../../../../../reset_sync/reset_sync.v" \
+"../../../../../../../ram/ram_dual_memsplit.v" \
+"../../../../../../../ram/ram.v" \
+"../../../../../../../ram/ram_dual.v" \
+"../../../../../../../../../../../../AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

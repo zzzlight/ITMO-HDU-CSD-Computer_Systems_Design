@@ -1,0 +1,248 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.3 (win64) Build 3173277 Wed Apr  7 05:07:49 MDT 2021
+| Date         : Sat Jun 12 01:04:09 2021
+| Host         : DESKTOP-CHU98O4 running 64-bit major release  (build 9200)
+| Command      : report_drc -file NEXYS4_DDR_drc_routed.rpt -pb NEXYS4_DDR_drc_routed.pb -rpx NEXYS4_DDR_drc_routed.rpx
+| Design       : NEXYS4_DDR
+| Device       : xcvc1802-viva1596-1LHP-i-L
+| Speed File   : -1LHP
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 42
++-----------+------------------+------------------------------+------------+
+| Rule      | Severity         | Description                  | Violations |
++-----------+------------------+------------------------------+------------+
+| NSTD-2    | Critical Warning | UNDEFINED I/O Standard issue | 1          |
+| UCIO-1    | Critical Warning | Unconstrained Logical Port   | 1          |
+| PDCN-1569 | Warning          | LUT equation term check      | 40         |
++-----------+------------------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-2#1 Critical Warning
+UNDEFINED I/O Standard issue  
+35 out of 36 logical ports use I/O standard (IOSTANDARD) value 'UNDEFINED' or 'DIFF_UNDEFINED', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. NOTE: This DRC is READONLY and cannot be waived. Problem ports: CLK100MHZ, LED[15:0], SW[15:0], UART_RXD_OUT, UART_TXD_IN.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+35 out of 36 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: CLK100MHZ, LED[15:0], SW[15:0], UART_RXD_OUT, UART_TXD_IN.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_120/LUTCY1_INST (in csr_rdata_reg[13]_i_120 macro) (pin csr_rdata_reg[13]_i_120/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A3*A5)+((~A3)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_120/LUTCY2_INST (in csr_rdata_reg[13]_i_120 macro) (pin csr_rdata_reg[13]_i_120/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_148/LUTCY1_INST (in csr_rdata_reg[13]_i_148 macro) (pin csr_rdata_reg[13]_i_148/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A3*A5)+((~A3)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_148/LUTCY2_INST (in csr_rdata_reg[13]_i_148 macro) (pin csr_rdata_reg[13]_i_148/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_176/LUTCY1_INST (in csr_rdata_reg[13]_i_176 macro) (pin csr_rdata_reg[13]_i_176/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A3*A5)+((~A3)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_176/LUTCY2_INST (in csr_rdata_reg[13]_i_176 macro) (pin csr_rdata_reg[13]_i_176/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_190/LUTCY1_INST (in csr_rdata_reg[13]_i_190 macro) (pin csr_rdata_reg[13]_i_190/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A3*A5)+((~A3)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_190/LUTCY2_INST (in csr_rdata_reg[13]_i_190 macro) (pin csr_rdata_reg[13]_i_190/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_218/LUTCY1_INST (in csr_rdata_reg[13]_i_218 macro) (pin csr_rdata_reg[13]_i_218/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A3*A5)+((~A3)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#10 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_218/LUTCY2_INST (in csr_rdata_reg[13]_i_218 macro) (pin csr_rdata_reg[13]_i_218/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#11 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_232/LUTCY1_INST (in csr_rdata_reg[13]_i_232 macro) (pin csr_rdata_reg[13]_i_232/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A3*A5)+((~A3)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#12 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[13]_i_232/LUTCY2_INST (in csr_rdata_reg[13]_i_232 macro) (pin csr_rdata_reg[13]_i_232/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#13 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_117/LUTCY1_INST (in csr_rdata_reg[14]_i_117 macro) (pin csr_rdata_reg[14]_i_117/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#14 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_117/LUTCY2_INST (in csr_rdata_reg[14]_i_117 macro) (pin csr_rdata_reg[14]_i_117/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#15 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_126/LUTCY1_INST (in csr_rdata_reg[14]_i_126 macro) (pin csr_rdata_reg[14]_i_126/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#16 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_126/LUTCY2_INST (in csr_rdata_reg[14]_i_126 macro) (pin csr_rdata_reg[14]_i_126/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#17 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_42/LUTCY1_INST (in csr_rdata_reg[14]_i_42 macro) (pin csr_rdata_reg[14]_i_42/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#18 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_42/LUTCY2_INST (in csr_rdata_reg[14]_i_42 macro) (pin csr_rdata_reg[14]_i_42/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#19 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_51/LUTCY1_INST (in csr_rdata_reg[14]_i_51 macro) (pin csr_rdata_reg[14]_i_51/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#20 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_51/LUTCY2_INST (in csr_rdata_reg[14]_i_51 macro) (pin csr_rdata_reg[14]_i_51/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#21 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_60/LUTCY1_INST (in csr_rdata_reg[14]_i_60 macro) (pin csr_rdata_reg[14]_i_60/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#22 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_60/LUTCY2_INST (in csr_rdata_reg[14]_i_60 macro) (pin csr_rdata_reg[14]_i_60/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#23 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_72/LUTCY1_INST (in csr_rdata_reg[14]_i_72 macro) (pin csr_rdata_reg[14]_i_72/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#24 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_72/LUTCY2_INST (in csr_rdata_reg[14]_i_72 macro) (pin csr_rdata_reg[14]_i_72/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#25 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_90/LUTCY1_INST (in csr_rdata_reg[14]_i_90 macro) (pin csr_rdata_reg[14]_i_90/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#26 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_90/LUTCY2_INST (in csr_rdata_reg[14]_i_90 macro) (pin csr_rdata_reg[14]_i_90/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#27 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_99/LUTCY1_INST (in csr_rdata_reg[14]_i_99 macro) (pin csr_rdata_reg[14]_i_99/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#28 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell csr_rdata_reg[14]_i_99/LUTCY2_INST (in csr_rdata_reg[14]_i_99 macro) (pin csr_rdata_reg[14]_i_99/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#29 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_134/LUTCY1_INST (in csr_rdata_reg[13]_i_134 macro) (pin csr_rdata_reg[13]_i_134/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A2*A5)+((~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#30 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_134/LUTCY2_INST (in csr_rdata_reg[13]_i_134 macro) (pin csr_rdata_reg[13]_i_134/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A2)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#31 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_162/LUTCY1_INST (in csr_rdata_reg[13]_i_162 macro) (pin csr_rdata_reg[13]_i_162/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A2*A5)+((~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#32 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_162/LUTCY2_INST (in csr_rdata_reg[13]_i_162 macro) (pin csr_rdata_reg[13]_i_162/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A2)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#33 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_204/LUTCY1_INST (in csr_rdata_reg[13]_i_204 macro) (pin csr_rdata_reg[13]_i_204/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A2*A5)+((~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#34 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_204/LUTCY2_INST (in csr_rdata_reg[13]_i_204 macro) (pin csr_rdata_reg[13]_i_204/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A2)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#35 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_246/LUTCY1_INST (in csr_rdata_reg[13]_i_246 macro) (pin csr_rdata_reg[13]_i_246/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=(A2*A5)+((~A2)*(~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#36 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[13]_i_246/LUTCY2_INST (in csr_rdata_reg[13]_i_246 macro) (pin csr_rdata_reg[13]_i_246/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A2)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#37 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[14]_i_108/LUTCY1_INST (in csr_rdata_reg[14]_i_108 macro) (pin csr_rdata_reg[14]_i_108/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#38 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[14]_i_108/LUTCY2_INST (in csr_rdata_reg[14]_i_108 macro) (pin csr_rdata_reg[14]_i_108/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A2)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#39 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[14]_i_81/LUTCY1_INST (in csr_rdata_reg[14]_i_81 macro) (pin csr_rdata_reg[14]_i_81/LUTCY1_INST/I3) is not included in the LUT equation: 'O5=((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#40 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell csr_rdata_reg[14]_i_81/LUTCY2_INST (in csr_rdata_reg[14]_i_81 macro) (pin csr_rdata_reg[14]_i_81/LUTCY2_INST/I3) is not included in the LUT equation: 'O6=((~A2)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+

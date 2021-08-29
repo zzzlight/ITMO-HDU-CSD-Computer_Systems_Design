@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun  4 21:39:36 2021
+# Process ID: 12612
+# Current directory: C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jun  4 21:39:41 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.3/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 116.398 ; gain = 17.523
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  4 21:39:41 2021...

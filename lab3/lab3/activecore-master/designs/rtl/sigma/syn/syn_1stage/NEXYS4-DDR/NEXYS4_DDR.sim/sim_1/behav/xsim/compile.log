@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog/riscv_1stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_1stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb

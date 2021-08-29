@@ -1,0 +1,608 @@
+
+*** Running vivado
+    with args -log NEXYS4_DDR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NEXYS4_DDR.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source NEXYS4_DDR.tcl -notrace
+Command: synth_design -top NEXYS4_DDR -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 977.258 ; gain = 235.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sv:10]
+	Parameter SIM bound to: NO - type: string 
+	Parameter UDM_BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter UDM_RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+	Parameter CSR_LED_ADDR bound to: 0 - type: integer 
+	Parameter CSR_SW_ADDR bound to: 4 - type: integer 
+	Parameter TESTMEM_ADDR bound to: -2147483648 - type: integer 
+	Parameter TESTMEM_WSIZE_POW bound to: 10 - type: integer 
+	Parameter TESTMEM_WSIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-5284-LAPTOP-N0TD0HBR/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-5284-LAPTOP-N0TD0HBR/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'reset_sync' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/reset_sync/reset_sync.v:1]
+	Parameter SYNC_STAGES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (2#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/reset_sync/reset_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udm' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm.v:10]
+	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_rx.v:10]
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+	Parameter ST_NOSYNC bound to: 4'b0000 
+	Parameter ST_NOSYNC_WAIT1_1 bound to: 4'b0001 
+	Parameter ST_NOSYNC_WAIT0_2 bound to: 4'b0010 
+	Parameter ST_NOSYNC_WAIT1_3 bound to: 4'b0011 
+	Parameter ST_NOSYNC_WAIT0_4 bound to: 4'b0100 
+	Parameter ST_NOSYNC_WAIT1_5 bound to: 4'b0101 
+	Parameter ST_NOSYNC_WAIT0_6 bound to: 4'b0110 
+	Parameter ST_NOSYNC_WAIT1_7 bound to: 4'b0111 
+	Parameter ST_NOSYNC_WAIT0_8 bound to: 4'b1000 
+	Parameter ST_NOSYNC_WAIT_STOP bound to: 4'b1001 
+	Parameter ST_SYNC bound to: 4'b1010 
+	Parameter ST_SYNC_WAIT_START bound to: 4'b1011 
+	Parameter ST_SYNC_RX_DATA bound to: 4'b1100 
+	Parameter ST_SYNC_WAIT_STOP bound to: 4'b1101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_rx.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_tx.v:10]
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+	Parameter ST_IDLE bound to: 8'b00000000 
+	Parameter ST_START bound to: 8'b00000001 
+	Parameter ST_TX_DATA bound to: 8'b00000010 
+	Parameter ST_STOP bound to: 8'b00000011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_tx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_tx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'udm_controller' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:10]
+	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter SYNC_BYTE bound to: 8'b01010101 
+	Parameter ESCAPE_BYTE bound to: 8'b01011010 
+	Parameter TRX_WR_SUCC_BYTE bound to: 8'b00000000 
+	Parameter TRX_ERR_ACK_BYTE bound to: 8'b00000001 
+	Parameter TRX_ERR_RESP_BYTE bound to: 8'b00000010 
+	Parameter TRX_IRQ_BYTE bound to: 8'b10000000 
+	Parameter IDCODE_CMD bound to: 8'b00000000 
+	Parameter RST_CMD bound to: 8'b10000000 
+	Parameter nRST_CMD bound to: 8'b11000000 
+	Parameter WR_INC_CMD bound to: 8'b10000001 
+	Parameter RD_INC_CMD bound to: 8'b10000010 
+	Parameter WR_NOINC_CMD bound to: 8'b10000011 
+	Parameter RD_NOINC_CMD bound to: 8'b10000100 
+	Parameter IDLE bound to: 8'b00000000 
+	Parameter FETCH_ADDR bound to: 8'b00000001 
+	Parameter FETCH_LENGTH bound to: 8'b00000010 
+	Parameter FETCH_DATA bound to: 8'b00000011 
+	Parameter WAIT_ACK bound to: 8'b00000100 
+	Parameter RD_DATA bound to: 8'b00000101 
+	Parameter TX_RDATA bound to: 8'b00000110 
+	Parameter WAIT_TX bound to: 8'b00000111 
+	Parameter WAIT_RESP bound to: 8'b00001000 
+WARNING: [Synth 8-5788] Register tr_length_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:237]
+WARNING: [Synth 8-5788] Register cmd_ff_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:268]
+WARNING: [Synth 8-5788] Register autoinc_ff_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:269]
+WARNING: [Synth 8-5788] Register counter_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:271]
+WARNING: [Synth 8-5788] Register timeout_counter_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:340]
+WARNING: [Synth 8-5788] Register tx_sendbyte_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:396]
+WARNING: [Synth 8-5788] Register RD_DATA_reg_reg in module udm_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:423]
+INFO: [Synth 8-6155] done synthesizing module 'udm_controller' (5#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'udm' (6#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v:1]
+	Parameter mem_init bound to: NO - type: string 
+	Parameter mem_type bound to: hex - type: string 
+	Parameter mem_data bound to: nodata.hex - type: string 
+	Parameter dat_width bound to: 32 - type: integer 
+	Parameter adr_width bound to: 10 - type: integer 
+	Parameter mem_size bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (7#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sqrtnum' [C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v:192]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'sqrtnum' (8#1) [C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v:12]
+WARNING: [Synth 8-7023] instance 'sqrtnum_inst' of module 'sqrtnum' has 8 connections declared, but only 6 given [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sv:137]
+INFO: [Synth 8-6155] done synthesizing module 'NEXYS4_DDR' (9#1) [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sv:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1051.605 ; gain = 309.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1051.605 ; gain = 309.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1051.605 ; gain = 309.398
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1051.605 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-5284-LAPTOP-N0TD0HBR/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-5284-LAPTOP-N0TD0HBR/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Parsing XDC File [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEXYS4_DDR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NEXYS4_DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1167.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1167.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1167.758 ; gain = 425.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1167.758 ; gain = 425.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-5284-LAPTOP-N0TD0HBR/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-5284-LAPTOP-N0TD0HBR/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for sys_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1167.758 ; gain = 425.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udm_controller'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               ST_NOSYNC |                             0000 |                            00000
+       ST_NOSYNC_WAIT1_1 |                             0001 |                            00001
+       ST_NOSYNC_WAIT0_2 |                             0010 |                            00010
+       ST_NOSYNC_WAIT1_3 |                             0011 |                            00011
+       ST_NOSYNC_WAIT0_4 |                             0100 |                            00100
+       ST_NOSYNC_WAIT1_5 |                             0101 |                            00101
+       ST_NOSYNC_WAIT0_6 |                             0110 |                            00110
+       ST_NOSYNC_WAIT1_7 |                             0111 |                            00111
+       ST_NOSYNC_WAIT0_8 |                             1000 |                            01000
+     ST_NOSYNC_WAIT_STOP |                             1001 |                            01001
+                 ST_SYNC |                             1010 |                            01010
+      ST_SYNC_WAIT_START |                             1011 |                            01011
+         ST_SYNC_RX_DATA |                             1100 |                            01100
+       ST_SYNC_WAIT_STOP |                             1101 |                            01101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                             0000
+                ST_START |                               01 |                             0001
+              ST_TX_DATA |                               10 |                             0010
+                 ST_STOP |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                         00000000
+              FETCH_ADDR |                              001 |                         00000001
+            FETCH_LENGTH |                              010 |                         00000010
+                WAIT_ACK |                              011 |                         00000100
+               WAIT_RESP |                              100 |                         00001000
+                TX_RDATA |                              101 |                         00000110
+                 WAIT_TX |                              110 |                         00000111
+              FETCH_DATA |                              111 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'udm_controller'
+INFO: [Synth 8-3971] The signal "ram_dual:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1167.758 ; gain = 425.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 13    
+	               31 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  14 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	  14 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module NEXYS4_DDR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module reset_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 7     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+Module udm_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 22    
+Module ram_dual 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module sqrtnum 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	   3 Input     31 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element testmem/ram_reg was removed. 
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[1]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[3]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[5]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[7]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[9]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[11]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[13]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[15]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[17]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[17]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[19]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[19]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[21]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[21]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[23]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[23]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[25]'
+INFO: [Synth 8-3886] merging instance 'sqrtnum_inst/m_0_reg_40_reg[25]' (FDR) to 'sqrtnum_inst/m_0_reg_40_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sqrtnum_inst/m_0_reg_40_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sqrtnum_inst/m_0_reg_40_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\udm/udm_controller/tx_irq_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1167.758 ; gain = 425.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|NEXYS4_DDR  | testmem/ram_reg | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1167.758 ; gain = 425.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1203.309 ; gain = 461.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|NEXYS4_DDR  | testmem/ram_reg | 1 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance testmem/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1203.613 ; gain = 461.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.379 ; gain = 464.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.379 ; gain = 464.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.379 ; gain = 464.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.379 ; gain = 464.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.422 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.422 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sys_clk       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |sys_clk  |     1|
+|2     |CARRY4   |    64|
+|3     |LUT1     |    35|
+|4     |LUT2     |    40|
+|5     |LUT3     |    94|
+|6     |LUT4     |   165|
+|7     |LUT5     |   121|
+|8     |LUT6     |   172|
+|9     |RAMB36E1 |     1|
+|10    |FDCE     |    73|
+|11    |FDPE     |     4|
+|12    |FDRE     |   466|
+|13    |FDSE     |     4|
+|14    |IBUF     |    18|
+|15    |OBUF     |    17|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------+---------------+------+
+|      |Instance           |Module         |Cells |
++------+-------------------+---------------+------+
+|1     |top                |               |  1276|
+|2     |  reset_sync       |reset_sync     |     7|
+|3     |  sqrtnum_inst     |sqrtnum        |   216|
+|4     |  testmem          |ram_dual       |     1|
+|5     |  udm              |udm            |   889|
+|6     |    uart_rx        |uart_rx        |   196|
+|7     |    uart_tx        |uart_tx        |   127|
+|8     |    udm_controller |udm_controller |   566|
++------+-------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.422 ; gain = 464.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1206.422 ; gain = 348.062
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.422 ; gain = 464.215
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1218.434 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1218.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1218.434 ; gain = 760.488
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1218.434 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 18:15:16 2021...

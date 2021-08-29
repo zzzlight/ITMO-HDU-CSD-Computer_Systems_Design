@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../sigma_tile/hw" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_6stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_3stage/sverilog" --include "../../../../../../../../udm/tb" --include "../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk" \
+"../../../../../../../../debouncer/debouncer.v" \
+"../../../../../../../../ram/ram_dual.v" \
+"../../../../../../../../ram/ram_dual_memsplit.v" \
+"../../../../../../../../reset_sync/reset_sync.v" \
+"../../../../../../../../udm/hdl/uart_rx.v" \
+"../../../../../../../../udm/hdl/uart_tx.v" \
+"../../../../../../../../udm/hdl/udm.v" \
+"../../../../../../../../udm/hdl/udm_controller.v" \
+
+sv xil_defaultlib  --include "../../../../../../../../sigma_tile/hw" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_6stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog" --include "../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_3stage/sverilog" --include "../../../../../../../../udm/tb" --include "../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk" \
+"../../../../../../../../sigma_tile/hw/arb_1m2s.sv" \
+"../../../../../../../../sigma_tile/hw/arb_2m1s.sv" \
+"../../../../../../../../sigma_tile/hw/arb_2m3s.sv" \
+"../../../../../../../../sigma_tile/hw/cpu_stub.sv" \
+"../../../../../../../../sigma_tile/hw/irq_adapter.sv" \
+"../../../../../../../../sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" \
+"../../../../../../../../sigma_tile/hw/sfr.sv" \
+"../../../../../../../hw/sigma.sv" \
+"../../../../../../../../sigma_tile/hw/sigma_tile.sv" \
+"../../../../../../../tb/riscv_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,23 @@
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+WARNING: Insufficient data from the input file for $fread
+
+##################################
+#### Loading elf file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv
+e_phnum: 0x00000001
+---- HEADER: 0 ----
+p_type: 0x00000001
+p_offset: 0x00000000
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x000005c0
+p_memsz: 0x000005c0
+p_flags: 0x00000007
+p_align: 0x00001000
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x80000000, data: 0xdeadbeef
+UDM RD32: addr: 0x80000004, data: 0x0000003c
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 512155 ns : File "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/tb/riscv_tb.sv" Line 124

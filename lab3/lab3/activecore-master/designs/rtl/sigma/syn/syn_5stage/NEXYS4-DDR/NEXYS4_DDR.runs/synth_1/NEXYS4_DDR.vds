@@ -1,0 +1,498 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun 18 22:10:48 2021
+# Process ID: 4864
+# Current directory: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1
+# Command line: vivado.exe -log NEXYS4_DDR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NEXYS4_DDR.tcl
+# Log file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.vds
+# Journal file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source NEXYS4_DDR.tcl -notrace
+Command: synth_design -top NEXYS4_DDR -part xcvc1802-viva1596-1LHP-i-L
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
+
+INFO: [IP_Flow 19-2162] IP 'sys_clk' is locked:
+* IP 'sys_clk' does not support the current project part 'xcvc1802-viva1596-1LHP-i-L'. Note that part differences may result in undefined behavior. * IP definition 'Clocking Wizard (6.0)' for IP 'sys_clk' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1802'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1802'
+INFO: [Device 21-403] Loading part xcvc1802-viva1596-1LHP-i-L
+WARNING: [Device 21-713] Unknown Tile Type, SLL, given for group, SLL
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1892
+load Versal unisim library
+load Versal unisim library
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1534.227 ; gain = 260.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-4864-DESKTOP-CHU98O4/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-4864-DESKTOP-CHU98O4/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sigma' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv:12]
+	Parameter CPU bound to: riscv_5stage - type: string 
+	Parameter delay_test_flag bound to: 0 - type: integer 
+	Parameter mem_init bound to: YES - type: string 
+	Parameter mem_type bound to: hex - type: string 
+	Parameter mem_data bound to: ../sigma/sw/benchmarks/heartbeat_variable.riscv.hex - type: string 
+	Parameter mem_size bound to: 8192 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reset_sync' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/reset_sync/reset_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (2#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/reset_sync/reset_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/debouncer/debouncer.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (3#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/debouncer/debouncer.v:10]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'sigma_tile' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:19]
+	Parameter corenum bound to: 0 - type: integer 
+	Parameter mem_init bound to: YES - type: string 
+	Parameter mem_type bound to: hex - type: string 
+	Parameter mem_data bound to: ../sigma/sw/benchmarks/heartbeat_variable.riscv.hex - type: string 
+	Parameter mem_size bound to: 8192 - type: integer 
+	Parameter CPU bound to: riscv_5stage - type: string 
+	Parameter PATH_THROUGH bound to: YES - type: string 
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'riscv_5stage' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:9]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:3141]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:3225]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:3274]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:3799]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:3553]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:3891]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:4315]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:4326]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_5stage' (4#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.sv:9]
+WARNING: [Synth 8-689] width (36) of port connection 'irq_fifo_genfifo_rdata_bi' does not match port width (8) of module 'riscv_5stage' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:286]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (4#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (4#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'arb_2m3s' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m3s.sv:12]
+	Parameter SFR_BITSEL bound to: 20 - type: integer 
+	Parameter XIF_BITSEL bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arb_2m3s' (5#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m3s.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'irq_adapter' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv:10]
+	Parameter IRQ_NUM_POW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'irq_adapter' (6#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_memsplit' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual_memsplit.v:1]
+	Parameter mem_init bound to: YES - type: string 
+	Parameter mem_type bound to: hex - type: string 
+	Parameter mem_data bound to: ../sigma/sw/benchmarks/heartbeat_variable.riscv.hex - type: string 
+	Parameter dat_width bound to: 32 - type: integer 
+	Parameter adr_width bound to: 30 - type: integer 
+	Parameter mem_size bound to: 8192 - type: integer 
+	Parameter P0_FRAC bound to: NO - type: string 
+	Parameter P1_FRAC bound to: YES - type: string 
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:1]
+	Parameter mem_init bound to: YES - type: string 
+	Parameter mem_type bound to: hex - type: string 
+	Parameter mem_data bound to: ../sigma/sw/benchmarks/heartbeat_variable.riscv.hex - type: string 
+	Parameter dat_width bound to: 32 - type: integer 
+	Parameter adr_width bound to: 30 - type: integer 
+	Parameter mem_size bound to: 8192 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '../sigma/sw/benchmarks/heartbeat_variable.riscv.hex' is read successfully [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (7#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_memsplit' (8#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual_memsplit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sfr' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sfr.sv:12]
+	Parameter corenum bound to: 0 - type: integer 
+	Parameter SW_RESET_DEFAULT bound to: 0 - type: integer 
+	Parameter IRQ_NUM_POW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sfr' (9#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sfr.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'sigma_tile' (10#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:19]
+WARNING: [Synth 8-689] width (36) of port connection 'irq_debounced_bi' does not match port width (16) of module 'sigma_tile' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv:69]
+INFO: [Synth 8-6157] synthesizing module 'udm' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm.v:10]
+	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v:10]
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (11#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v:10]
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (12#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'udm_controller' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm_controller.v:10]
+	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'udm_controller' (13#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm_controller.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'udm' (14#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'sigma' (15#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv:12]
+WARNING: [Synth 8-689] width (16) of port connection 'gpio_bo' does not match port width (32) of module 'sigma' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'NEXYS4_DDR' (16#1) [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1639.844 ; gain = 365.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1639.844 ; gain = 365.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1639.844 ; gain = 365.934
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1639.844 ; gain = 0.000
+INFO: [Constraints 18-5718] GCLK Deskew mode is set to Off via param.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-4864-DESKTOP-CHU98O4/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Finished Parsing XDC File [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-4864-DESKTOP-CHU98O4/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Parsing XDC File [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEXYS4_DDR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NEXYS4_DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1891.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1891.535 ; gain = 0.000
+load Versal unisim library
+load Versal unisim library
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1891.535 ; gain = 617.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1802-viva1596-1LHP-i-L
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1891.535 ; gain = 617.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-4864-DESKTOP-CHU98O4/sys_clk/sys_clk/sys_clk_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-4864-DESKTOP-CHU98O4/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1891.535 ; gain = 617.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udm_controller'
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "ram_dual:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "ram_dual:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 5 for RAM "ram_dual:/ram_reg"
+INFO: [Synth 8-3971] The signal "ram_dual:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               ST_NOSYNC |                             0000 |                            00000
+       ST_NOSYNC_WAIT1_1 |                             0001 |                            00001
+       ST_NOSYNC_WAIT0_2 |                             0010 |                            00010
+       ST_NOSYNC_WAIT1_3 |                             0011 |                            00011
+       ST_NOSYNC_WAIT0_4 |                             0100 |                            00100
+       ST_NOSYNC_WAIT1_5 |                             0101 |                            00101
+       ST_NOSYNC_WAIT0_6 |                             0110 |                            00110
+       ST_NOSYNC_WAIT1_7 |                             0111 |                            00111
+       ST_NOSYNC_WAIT0_8 |                             1000 |                            01000
+     ST_NOSYNC_WAIT_STOP |                             1001 |                            01001
+                 ST_SYNC |                             1010 |                            01010
+      ST_SYNC_WAIT_START |                             1011 |                            01011
+         ST_SYNC_RX_DATA |                             1100 |                            01100
+       ST_SYNC_WAIT_STOP |                             1101 |                            01101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                             0000
+                ST_START |                               01 |                             0001
+              ST_TX_DATA |                               10 |                             0010
+                 ST_STOP |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                         00000000
+              FETCH_ADDR |                              001 |                         00000001
+            FETCH_LENGTH |                              010 |                         00000010
+                WAIT_ACK |                              011 |                         00000100
+               WAIT_RESP |                              100 |                         00001000
+                TX_RDATA |                              101 |                         00000110
+                 WAIT_TX |                              110 |                         00000111
+              FETCH_DATA |                              111 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'udm_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1891.535 ; gain = 617.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 67    
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 104   
++---RAMs : 
+	             256K Bit	(8192 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   7 Input   33 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 8     
+	  10 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 217   
+	   8 Input   32 Bit        Muxes := 7     
+	   3 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 4     
+	  10 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 30    
+	  14 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 9     
+	   8 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 33    
+	   8 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 3     
+	  12 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 14    
+	   6 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	  23 Input    3 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 4     
+	  12 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 442   
+	   7 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 11    
+	   8 Input    1 Bit        Muxes := 26    
+	   6 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 10    
+	  15 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1600 (col length:164)
+BRAMs: 1600 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "NEXYS4_DDR/sigma/sigma_tile/ram/ram_dual/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "NEXYS4_DDR/sigma/sigma_tile/ram/ram_dual/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "NEXYS4_DDR/sigma/sigma_tile/ram/ram_dual/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 5 for RAM "NEXYS4_DDR/sigma/sigma_tile/ram/ram_dual/ram_reg"
+INFO: [Synth 8-3971] The signal "NEXYS4_DDR/sigma/sigma_tile/ram/ram_dual/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2022.977 ; gain = 749.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|NEXYS4_DDR  | sigma/sigma_tile/ram/ram_dual/ram_reg | 8 K x 32(READ_FIRST)   | W | R | 8 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 8      | 2,2,2,2         | 
++------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+INFO: [Device 21-2210] 2 Level speed models with no predriver populated from models with predrivers.  Count = 65
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 2738.344 ; gain = 1464.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2738.344 ; gain = 1464.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|NEXYS4_DDR  | sigma/sigma_tile/ram/ram_dual/ram_reg | 8 K x 32(READ_FIRST)   | W | R | 8 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 8      | 2,2,2,2         | 
++------------+---------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 2905.234 ; gain = 1631.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sys_clk       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |sys_clk      |     1|
+|2     |LOOKAHEAD8   |    24|
+|7     |LUT1         |    20|
+|8     |LUT2         |   546|
+|9     |LUT3         |   490|
+|10    |LUT4         |   432|
+|11    |LUT5         |   711|
+|12    |LUT6         |  1929|
+|13    |LUT6CY       |   179|
+|14    |LUT6         |    33|
+|15    |RAMB36E5_INT |     8|
+|20    |FDCE         |    74|
+|21    |FDPE         |     4|
+|22    |FDRE         |  2309|
+|23    |FDSE         |     4|
+|24    |IBUF         |    19|
+|25    |OBUF         |    17|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 2919.133 ; gain = 1393.531
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 2919.133 ; gain = 1645.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2931.453 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 220 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Constraints 18-5718] GCLK Deskew mode is set to Off via param.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2957.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 220 instances were transformed.
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 179 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 33 instances
+  RAMB36E5 => RAMB36E5_INT: 8 instances
+
+Synth Design complete, checksum: c9811753
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 2957.355 ; gain = 1855.297
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_5stage/NEXYS4-DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 18 22:12:34 2021...

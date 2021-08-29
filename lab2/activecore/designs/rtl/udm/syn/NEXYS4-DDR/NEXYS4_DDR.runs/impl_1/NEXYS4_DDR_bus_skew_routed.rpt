@@ -1,0 +1,16 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.3 (win64) Build 3173277 Wed Apr  7 05:07:49 MDT 2021
+| Date              : Sat Jun 12 01:04:22 2021
+| Host              : DESKTOP-CHU98O4 running 64-bit major release  (build 9200)
+| Command           : report_bus_skew -warn_on_violation -file NEXYS4_DDR_bus_skew_routed.rpt -pb NEXYS4_DDR_bus_skew_routed.pb -rpx NEXYS4_DDR_bus_skew_routed.rpx
+| Design            : NEXYS4_DDR
+| Device            : xcvc1802-viva1596
+| Speed File        : -1LHP  PRODUCTION 2.00 2021-03-24
+| Temperature Grade : I
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

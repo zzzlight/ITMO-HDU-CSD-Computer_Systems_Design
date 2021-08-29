@@ -1,0 +1,78 @@
+Vivado Simulator v2020.3.0
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.3/bin/unwrapped/win64.o/xelab.exe -wto dbe4f722851248e3976cc912f1a3ff99 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L unisims_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv:69]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:238]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv:69]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:238]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:55]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:61]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:120]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 55, File C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 61, File C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(mem_type="elf",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(mem_type="elf",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(mem_type="elf",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(mem_type="elf",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(mem_type="elf",mem_data...
+Compiling module xil_defaultlib.ram_dual_memsplit(mem_type="elf"...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_data="C:/Users/DE...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav

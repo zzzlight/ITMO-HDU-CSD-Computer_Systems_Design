@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun 11 20:44:28 2021
+# Process ID: 12996
+# Current directory: C:/Users/DELL/Desktop/lab1/lab1/lab1/activecore/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/sys_clk_synth_1
+# Command line: vivado.exe -log sys_clk.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_clk.tcl
+# Log file: C:/Users/DELL/Desktop/lab1/lab1/lab1/activecore/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/sys_clk_synth_1/sys_clk.vds
+# Journal file: C:/Users/DELL/Desktop/lab1/lab1/lab1/activecore/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.runs/sys_clk_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_clk.tcl -notrace

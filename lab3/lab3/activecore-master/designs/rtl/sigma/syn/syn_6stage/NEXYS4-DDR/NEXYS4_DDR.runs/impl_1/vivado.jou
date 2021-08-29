@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun 18 22:07:41 2021
+# Process ID: 11800
+# Current directory: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1
+# Command line: vivado.exe -log NEXYS4_DDR.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NEXYS4_DDR.tcl -notrace
+# Log file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.vdi
+# Journal file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source NEXYS4_DDR.tcl -notrace

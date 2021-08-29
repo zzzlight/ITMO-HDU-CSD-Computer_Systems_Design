@@ -1,0 +1,119 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.3 (win64) Build 3173277 Wed Apr  7 05:07:49 MDT 2021
+| Date         : Sat Jun 12 01:00:31 2021
+| Host         : DESKTOP-CHU98O4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file NEXYS4_DDR_control_sets_placed.rpt
+| Design       : NEXYS4_DDR
+| Device       : xcvc1802
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    41 |
+|    Minimum number of control sets                        |    41 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    21 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    41 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    21 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            3 |
+| No           | No                    | Yes                    |               8 |            5 |
+| No           | Yes                   | No                     |              60 |           13 |
+| Yes          | No                    | No                     |             473 |          160 |
+| Yes          | No                    | Yes                    |              69 |           22 |
+| Yes          | Yes                   | No                     |             142 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |                    Enable Signal                   |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+----------------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  sys_clk/inst/clk_out1 | udm/uart_tx/tx_o_i_1_n_0                           | reset_sync/Q[0]                            |                1 |              1 |         1.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_req_o_i_1_n_0               | reset_sync/Q[0]                            |                1 |              2 |         2.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/counter[1]_i_1_n_0              |                                            |                1 |              2 |         2.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/cmd_ff34_out                    |                                            |                1 |              2 |         2.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tx_dout_bo[2]_i_1_n_0           |                                            |                2 |              2 |         1.00 |
+|  sys_clk/inst/clk_out1 | udm/uart_tx/FSM_sequential_state[1]_i_1__0_n_0     | reset_sync/Q[0]                            |                2 |              2 |         1.00 |
+|  sys_clk/inst/clk_out1 |                                                    |                                            |                3 |              3 |         1.00 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/bit_counter                            | reset_sync/Q[0]                            |                1 |              3 |         3.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/FSM_sequential_state[2]_i_1_n_0 | reset_sync/Q[0]                            |                1 |              3 |         3.00 |
+|  sys_clk/inst/clk_out1 | udm/uart_tx/bit_counter[2]_i_1_n_0                 |                                            |                1 |              3 |         3.00 |
+|  sys_clk/inst/clk_out1 |                                                    | reset_sync/arst                            |                2 |              4 |         2.00 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/FSM_sequential_state[3]_i_1_n_0        | reset_sync/Q[0]                            |                1 |              4 |         4.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tx_dout_bo[2]_i_1_n_0           | reset_sync/Q[0]                            |                3 |              6 |         2.00 |
+|  sys_clk/inst/clk_out1 |                                                    | udm/uart_rx/SR[0]                          |                1 |              8 |         8.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/RD_DATA_reg[23]_i_1_n_0         | udm/udm_controller/RD_DATA_reg[31]_i_1_n_0 |                2 |              8 |         4.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tx_sendbyte[7]_i_2_n_0          | udm/udm_controller/tx_sendbyte[7]_i_1_n_0  |                1 |              8 |         8.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tx_sendbyte_ff[7]_i_1_n_0       |                                            |                3 |              8 |         2.67 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/dout_bo[7]_i_1_n_0                     | reset_sync/Q[0]                            |                3 |              8 |         2.67 |
+|  sys_clk/inst/clk_out1 | udm/uart_tx/databuf                                | reset_sync/Q[0]                            |                2 |              8 |         4.00 |
+|  sys_clk/inst/clk_out1 |                                                    | reset_sync/Q[0]                            |                7 |             12 |         1.71 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/E[0]                            |                                            |               13 |             16 |         1.23 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/RD_DATA_reg[23]_i_1_n_0         |                                            |                5 |             24 |         4.80 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/bitperiod_o[28]_i_1_n_0                | reset_sync/Q[0]                            |                6 |             30 |         5.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[4]_0[0]         |                                            |                9 |             32 |         3.56 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_req_o_reg_0[0]              |                                            |               12 |             32 |         2.67 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[28]_3[0]        |                                            |               13 |             32 |         2.46 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[28]_4[0]        |                                            |               11 |             32 |         2.91 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[2]_0[0]         |                                            |                7 |             32 |         4.57 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[28]_1[0]        |                                            |               12 |             32 |         2.67 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[29]_0[0]        |                                            |               14 |             32 |         2.29 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo[31]_i_1_n_0         | reset_sync/Q[0]                            |               12 |             32 |         2.67 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_wdata_bo[31]_i_1_n_0        | reset_sync/Q[0]                            |                9 |             32 |         3.56 |
+|  sys_clk/inst/clk_out1 | udm/uart_rx/clk_counter                            | reset_sync/Q[0]                            |               10 |             32 |         3.20 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/tr_length[31]_i_1_n_0           |                                            |                8 |             32 |         4.00 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[31]_1[0]        |                                            |               13 |             32 |         2.46 |
+|  sys_clk/inst/clk_out1 | udm/uart_tx/clk_counter                            | reset_sync/Q[0]                            |               10 |             32 |         3.20 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[28]_0[0]        |                                            |               10 |             32 |         3.20 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[31]_0[0]        |                                            |               12 |             32 |         2.67 |
+|  sys_clk/inst/clk_out1 | udm/udm_controller/bus_addr_bo_reg[28]_2[0]        |                                            |               10 |             32 |         3.20 |
+|  sys_clk/inst/clk_out1 | reset_sync/E[0]                                    |                                            |                8 |             32 |         4.00 |
+|  sys_clk/inst/clk_out1 |                                                    | udm/udm_controller/bus_req_o_reg_1         |                8 |             44 |         5.50 |
++------------------------+----------------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+
+

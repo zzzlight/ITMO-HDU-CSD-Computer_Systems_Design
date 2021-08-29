@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun 18 22:07:41 2021
+# Process ID: 11800
+# Current directory: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1
+# Command line: vivado.exe -log NEXYS4_DDR.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NEXYS4_DDR.tcl -notrace
+# Log file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.vdi
+# Journal file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source NEXYS4_DDR.tcl -notrace
+Command: open_checkpoint C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1101.988 ; gain = 0.000
+INFO: [Device 21-403] Loading part xcvc1802-viva1596-1LHP-i-L
+WARNING: [Device 21-713] Unknown Tile Type, SLL, given for group, SLL
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1265.539 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 235 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.3/data/ip'.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.3
+INFO: [Constraints 18-5718] GCLK Deskew mode is set to Off via param.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.275 . Memory (MB): peak = 2389.777 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2389.777 ; gain = 370.879
+INFO: [Device 21-2210] 2 Level speed models with no predriver populated from models with predrivers.  Count = 65
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'sys_clk_MMCME4_ADV_BLACKBOX' instantiated as 'sys_clk/inst/mmcm_adv_inst' [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_6stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_clk_wiz.v:139]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2670.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 235 instances were transformed.
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 179 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 56 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.3 (64-bit) build 3173277
+open_checkpoint: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2670.867 ; gain = 1568.879
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvc1802'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvc1802'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'sys_clk/inst/mmcm_adv_inst' of type 'sys_clk_MMCME4_ADV_BLACKBOX' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.744 . Memory (MB): peak = 2678.020 ; gain = 7.152
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 1 Warnings, 1 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 18 22:08:32 2021...

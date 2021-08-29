@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="sys_clk_synth_1" LaunchPart="xcvc1802-viva1596-1LHP-i-L" LaunchTime="1622814099">
+  <File Type="PA-TCL" Name="sys_clk.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="sys_clk_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="sys_clk_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sys_clk.vds"/>
+  <File Type="RDS-UTIL" Name="sys_clk_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sys_clk_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sys_clk.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sys_clk_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="sys_clk_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_clk">
+    <File Path="$PSRCDIR/sources_1/ip/sys_clk.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/sys_clk/sys_clk.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sys_clk"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_clk">
+    <File Path="$PSRCDIR/sources_1/ip/sys_clk.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/sys_clk/sys_clk.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sys_clk"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

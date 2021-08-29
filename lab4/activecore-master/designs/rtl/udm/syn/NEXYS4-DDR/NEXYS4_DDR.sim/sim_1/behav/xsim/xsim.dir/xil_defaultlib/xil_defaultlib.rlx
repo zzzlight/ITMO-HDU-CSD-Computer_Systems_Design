@@ -1,0 +1,18 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v,1624528306,verilog,,,,sqrtnum,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v,,ram,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual.v,1624190264,verilog,,C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/sqrtnum/solution1/impl/verilog/sqrtnum.v,,ram_dual,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual_memsplit.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram.v,,ram_dual_memsplit,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/reset_sync/reset_sync.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/ram/ram_dual_memsplit.v,,reset_sync,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_rx.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v,,uart_rx,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_tx.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/reset_sync/reset_sync.v,,uart_tx,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_rx.v,,udm,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/udm_controller.v,1624190264,verilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/hdl/uart_tx.v,,udm_controller,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v,1583820650,verilog,,,,sys_clk;sys_clk_sys_clk_clk_wiz,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sv,1624529553,systemVerilog,,,,NEXYS4_DDR,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/tb/tb.sv,1624525867,systemVerilog,,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sv,C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/tb/udm.svh,tb,,,,,,,,
+C:/Users/Administrator/Desktop/lab4/activecore-master/designs/rtl/udm/tb/udm.svh,1624190264,verilog,,,,,,,,,,,,

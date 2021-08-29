@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/debouncer/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

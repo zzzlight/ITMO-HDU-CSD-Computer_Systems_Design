@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="42.253 ns"></ZoomEndTime>
+      <Cursor1Time time="0.039 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="136"></NameColumnWidth>
+      <ValueColumnWidth column_width="121"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb/SW" type="array">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/LED" type="array">
+      <obj_property name="ElementShortName">LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/SqrtHw_inst/sqrt_element_x" type="array">
+      <obj_property name="ElementShortName">sqrt_element_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_element_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/SqrtHw_inst/element_x" type="array">
+      <obj_property name="ElementShortName">element_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">element_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/CSR_LED_ADDR" type="array">
+      <obj_property name="ElementShortName">CSR_LED_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR_LED_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/CSR_SW_ADDR" type="array">
+      <obj_property name="ElementShortName">CSR_SW_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR_SW_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/TESTMEM_ADDR" type="array">
+      <obj_property name="ElementShortName">TESTMEM_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TESTMEM_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/SqrtHw_inst/y" type="array">
+      <obj_property name="ElementShortName">y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/SqrtHw_inst/x" type="array">
+      <obj_property name="ElementShortName">x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/SqrtHw_inst/m" type="array">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+   </wvobject>
+</wave_config>

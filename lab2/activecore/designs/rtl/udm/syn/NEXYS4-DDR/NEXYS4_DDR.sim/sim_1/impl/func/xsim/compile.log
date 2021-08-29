@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/impl/func/xsim/tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NEXYS4_DDR
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-311] analyzing module sys_clk
+INFO: [VRFC 10-311] analyzing module sys_clk_clk_wiz
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/impl/func/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/DELL/Desktop/labone/activecore-master/designs/rtl/udm/syn/NEXYS4-DDR/NEXYS4_DDR.sim/sim_1/impl/func/xsim/glbl.v:6]

@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Fri Jun 18 20:47:48 2021
+# Process ID: 8744
+# Current directory: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1
+# Command line: vivado.exe -log NEXYS4_DDR.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source NEXYS4_DDR.tcl -notrace
+# Log file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.vdi
+# Journal file: C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source NEXYS4_DDR.tcl -notrace
+Command: link_design -top NEXYS4_DDR -part xcvc1802-viva1596-1LHP-i-L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcvc1802-viva1596-1LHP-i-L
+WARNING: [Device 21-713] Unknown Tile Type, SLL, given for group, SLL
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.runs/impl_1/.Xil/Vivado-8744-DESKTOP-CHU98O4/sys_clk/sys_clk.dcp' for cell 'sys_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1297.578 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 201 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.3
+INFO: [Constraints 18-5718] GCLK Deskew mode is set to Off via param.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc] for cell 'sys_clk/inst'
+Finished Parsing XDC File [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc] for cell 'sys_clk/inst'
+Parsing XDC File [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc] for cell 'sys_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2065.578 ; gain = 495.867
+Finished Parsing XDC File [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc] for cell 'sys_clk/inst'
+Parsing XDC File [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E3' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J15' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L16' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:15]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M13' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R15' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:17]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R17' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:18]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T18' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U18' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:20]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R13' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:21]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T8' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:22]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U8' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:23]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R16' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:24]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T13' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:25]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H6' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U12' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U11' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:28]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V10' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:29]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS9_X0Y0) is not valid for the shape with the following elements: 
+LED[0]
+LED_OBUF[0]_inst
+ [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:33]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K15' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:34]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J13' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N14' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R18' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:37]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:38]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U17' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:39]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U16' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:40]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:41]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T15' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:42]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U14' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:43]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T16' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:44]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V15' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:45]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V14' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:46]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V12' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:47]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V11' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:48]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N17' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C4' is not a valid site or package pin name. [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:224]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not find a valid bel [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc:225]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'sys_clk_MMCME4_ADV_BLACKBOX' instantiated as 'sys_clk/inst/mmcm_adv_inst' [c:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4-DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_clk_wiz.v:139]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2337.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 201 instances were transformed.
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 179 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 22 instances
+
+10 Infos, 1 Warnings, 37 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2337.512 ; gain = 1235.305
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvc1802'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvc1802'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'sys_clk/inst/mmcm_adv_inst' of type 'sys_clk_MMCME4_ADV_BLACKBOX' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.782 . Memory (MB): peak = 2337.512 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+15 Infos, 1 Warnings, 37 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 18 20:48:20 2021...

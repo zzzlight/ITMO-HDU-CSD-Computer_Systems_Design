@@ -1,0 +1,53 @@
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+### SIMULATION STARTED ###
+WARNING: File: C:/Users/DELL/Desktop/lab1/lab1/lab1/activecore/designs/rtl/udm/tb/udm.svh Line: 20 : Attempting to dereference a null or uninitialized class object in write context : This is not allowed and the write is ignored.
+WARNING: File: C:/Users/DELL/Desktop/lab1/lab1/lab1/activecore/designs/rtl/udm/tb/udm.svh Line: 20 : Attempting to dereference a null or uninitialized class object in write context : This is not allowed and the write is ignored.
+UDM WR32: addr: 0x00000000, data: 0x000033cc
+UDM RD32: addr: 0x00000004, data: 0x00000031
+-- UDM WRARR32: addr: 0x80000000, length:   10 --
+UDM WR32: addr: 0x80000000, data[   0]: 0x00000000
+UDM WR32: addr: 0x80000004, data[   1]: 0x00000001
+UDM WR32: addr: 0x80000008, data[   2]: 0x00000002
+UDM WR32: addr: 0x8000000c, data[   3]: 0x00000003
+UDM WR32: addr: 0x80000010, data[   4]: 0x00000004
+UDM WR32: addr: 0x80000014, data[   5]: 0x00000005
+UDM WR32: addr: 0x80000018, data[   6]: 0x00000006
+UDM WR32: addr: 0x8000001c, data[   7]: 0x00000007
+UDM WR32: addr: 0x80000020, data[   8]: 0x00000008
+UDM WR32: addr: 0x80000024, data[   9]: 0x00000009
+-- UDM WRARR32 complete --
+-- UDM RDARR32: addr: 0x80000000, length:   10 --
+UDM RD32: addr: 0x80000000, data[   0]: 0x00000000
+UDM RD32: addr: 0x80000004, data[   1]: 0x00000001
+UDM RD32: addr: 0x80000008, data[   2]: 0x00000002
+UDM RD32: addr: 0x8000000c, data[   3]: 0x00000003
+UDM RD32: addr: 0x80000010, data[   4]: 0x00000004
+UDM RD32: addr: 0x80000014, data[   5]: 0x00000005
+UDM RD32: addr: 0x80000018, data[   6]: 0x00000006
+UDM RD32: addr: 0x8000001c, data[   7]: 0x00000007
+UDM RD32: addr: 0x80000020, data[   8]: 0x00000008
+UDM RD32: addr: 0x80000024, data[   9]: 0x00000009
+-- UDM RDARR32 complete --
+UDM WR32: addr: 0x10000000, data: 0x0000000b
+UDM WR32: addr: 0x10000004, data: 0x00000020
+UDM WR32: addr: 0x10000008, data: 0x00000017
+UDM WR32: addr: 0x1000000c, data: 0x00000022
+UDM WR32: addr: 0x10000010, data: 0x0000002d
+UDM WR32: addr: 0x10000014, data: 0x00000038
+UDM WR32: addr: 0x10000018, data: 0x0000003e
+UDM WR32: addr: 0x1000001c, data: 0x00000049
+UDM WR32: addr: 0x10000020, data: 0x00000051
+UDM WR32: addr: 0x10000024, data: 0x0000005a
+UDM RD32: addr: 0x20000000, data: 0x00000003
+UDM RD32: addr: 0x20000004, data: 0x00000005
+UDM RD32: addr: 0x20000008, data: 0x00000004
+UDM RD32: addr: 0x2000000c, data: 0x00000005
+UDM RD32: addr: 0x20000010, data: 0x00000006
+UDM RD32: addr: 0x20000014, data: 0x00000007
+UDM RD32: addr: 0x20000018, data: 0x00000007
+UDM RD32: addr: 0x2000001c, data: 0x00000008
+UDM RD32: addr: 0x20000020, data: 0x00000009
+UDM RD32: addr: 0x20000024, data: 0x00000009
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 19355 ns : File "C:/Users/DELL/Desktop/lab1/lab1/lab1/activecore/designs/rtl/udm/tb/tb.sv" Line 132

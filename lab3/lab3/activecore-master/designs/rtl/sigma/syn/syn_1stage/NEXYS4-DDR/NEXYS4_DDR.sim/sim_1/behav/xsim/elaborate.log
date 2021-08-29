@@ -1,0 +1,15 @@
+Vivado Simulator v2020.3.0
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.3/bin/unwrapped/win64.o/xelab.exe -wto dbe4f722851248e3976cc912f1a3ff99 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L unisims_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <riscv_2stage> not found while processing module instance <genblk1.riscv> [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:136]
+ERROR: [VRFC 10-2865] module 'udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES")' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm.v:10]
+ERROR: [VRFC 10-2865] module 'irq_adapter_default' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv:10]
+ERROR: [VRFC 10-2865] module 'ram_dual_memsplit(mem_type="elf",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES")' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual_memsplit.v:1]
+ERROR: [VRFC 10-2865] module 'uart_rx(RTX_EXTERNAL_OVERRIDE="YES")' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_rx.v:10]
+ERROR: [VRFC 10-2865] module 'uart_tx(RTX_EXTERNAL_OVERRIDE="YES")' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/uart_tx.v:10]
+ERROR: [VRFC 10-2865] module 'udm_controller(BUS_TIMEOUT=104857600)' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/udm/hdl/udm_controller.v:10]
+ERROR: [VRFC 10-2865] module 'ram_dual(mem_type="elf",mem_data="C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/sigma/sw/benchmarks/mysqrt.riscv",adr_width=30,mem_size=8192)' ignored due to previous errors [C:/Users/DELL/Desktop/activecore-master1/activecore-master/designs/rtl/ram/ram_dual.v:1]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
